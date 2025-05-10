@@ -1,32 +1,19 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Highest Element Finder</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
-<body>	
-	<script>
-		function secondHighest(arr) {
-			//Write your code here
-			
-		}
-
-		function Main() {
-			var n = prompt("Enter the number of elements");
-			var arr = [];
-			for (var i = 0; i < n; i++) {
-				arr[i] = prompt("Enter element " + (i+1));
-			}
-			alert(secondHighest(arr));
-		}
-		Main();
-	</script>
-
-    <script type="text/javascript" src="./script.js">
-</script>
-
+<body>
+    <div class="container">
+        <h2>Find Second Highest Element in an Array</h2>
+        <input type="text" id="inputArray" placeholder="Enter an array (e.g. [1, 2, 3])" />
+        <button onclick="findSecondHighest()">Find Second Highest</button>
+        <div id="result"></div>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
-
 </html>
